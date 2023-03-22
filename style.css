@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Suwannaphum:wght@100;300;400;700;900&display=swap");
+
+:root {
+    --white-color: #fff;
+    --white-color-darker: rgba(255, 255, 255, 0.8);
+    --text-color-blue: #35c0f3;
+    --text-color-blue-light: #73ceef;
+    --text-color-black: #555;
+    --background-progress: #2e5b6c;
+    --width-cv: 900px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Suwannaphum", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color-black);
+    background-color: var(--background-progress);
+}
+
+.wrapper {
+    width: var(--width-cv);
+    height: auto;
+    display: flex;
+    margin: 20px auto;
+}
+
+.left-side {
+    width: calc(var(--width-cv) / 3);
+    background-color: var(--text-color-blue);
+    color: var(--white-color);
+}
+
+.avatar-cv {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.avatar-cv__img {
+    width: 100%;
+    height: 100%;
+    border: 30px solid var(--text-color-blue);
+    border-radius: 50%;
+}
+
+.info-recruitment {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.position-apply {
+    color: var(--white-color-darker);
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.position-apply-details {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+}
+
+.personal-info {
+    padding: 0 20px;
+}
+
+.personal-info__item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--white-color-darker);
+}
+
+.personal-info__item:last-child {
+    border-bottom: 0;
+}
+
+.contact {
+    border-top: 1px solid var(--white-color-darker);
+}
+
+.title {
+    margin-bottom: 16px;
+}
+
+.bold {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.personal-info__item ul li {
+    line-height: 26px;
+    margin-bottom: 4px;
+}
+
+.icon {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.icon i {
+    font-size: 20px;
+    color: var(--text-color-blue);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.data {
+    margin-left: 6px;
+}
+
+.skills ul li,
+.foreign-languages ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-name,
+.language-name {
+    text-transform: uppercase;
+    width: 28%;
+    color: var(--white-color-darker);
+}
+
+.skill-progress,
+.language-progress {
+    flex: 1;
+    background-color: var(--background-progress);
+    height: 4px;
+    position: relative;
+}
+
+.skill-progress span,
+.language-progress span {
+    background-color: var(--white-color);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+li:nth-child(1) .skill-progress span {
+    width: 90%;
+}
+
+li:nth-child(2) .skill-progress span {
+    width: 80%;
+}
+
+li:nth-child(3) .skill-progress span {
+    width: 70%;
+}
+
+li:nth-child(4) .skill-progress span {
+    width: 70%;
+}
+
+li:nth-child(5) .skill-progress span {
+    width: 35%;
+}
+
+li:nth-child(6) .skill-progress span {
+    width: 45%;
+}
+
+
+li:nth-child(1) .language-progress span {
+    width: 30%;
+}
+
+li:nth-child(2) .language-progress span {
+    width: 40%;
+}
+
+.skill-percents,
+.language-percents {
+    color: var(--white-color-darker);
+    width: 12%;
+    text-align: right;
+}
+
+.right-side {
+    flex: 1;
+    background-color: var(--white-color);
+    color: var(--text-color-blue);
+}
+
+.right-side-content {
+    margin: 20px;
+    color: var(--text-color-black);
+}
+
+.right-side__item {
+    border-bottom: 1px solid var(--text-color-blue-light);
+    padding: 16px 0 8px;
+}
+
+.right-side__item:nth-child(1) {
+    padding-top: 0;
+}
+
+.right-side__item:last-child {
+    border-bottom: 0px;
+}
+
+.right-side__item .bold {
+    color: var(--text-color-blue);
+}
+
+.right-side__item ul li {
+    margin-left: 20px;
+}
+
+.career-term {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.experience-work__details {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.time-work {
+    margin-bottom: 8px;
+}
+
+li:nth-child(2) .time-work {
+    margin-top: 16px;
+}
+
+.position-work {
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.desc-work,
+.desc-career-term {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+/* tạo vòng tròn  */
+.experience-work ul li .time-work::before,
+.education ul li .time-work::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border: 2px solid var(--text-color-blue);
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: -20px;
+}
+
+/* tạo đường thẳng dưới vòng tròn  */
+.experience-work ul li .time-work::after,
+.education ul li .time-work::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 96px;
+    background-color: var(--text-color-blue);
+    top: 10px;
+    left: -16px;
+}
+
+.experience-work ul li:nth-child(2) .time-work::after {
+    height: 76px;
+}
+
+.education ul li:nth-child(1) .time-work::after {
+    height: 72px;
+}
+
+.education ul li .time-work::after {
+    height: 56px;
+}
+
+.hobbies-icon {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.icon-hobby {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--text-color-blue);
+    color: var(--text-color-blue);
+    border-radius: 50%;
+}
+
+.hobbies-icon .icon-hobby i {
+    font-size: 44px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-hobby::after {
+    height: 2px;
+    width: 96px;
+    top: 34px;
+    left: 66px;
+    content: "";
+    position: absolute;
+    background-color: var(--text-color-blue);
+}
+
+.icon-hobby:last-child::after {
+    width: 0px;
+}
+
+.demo-projects ul li {
+    margin-bottom: 8px;
+}
